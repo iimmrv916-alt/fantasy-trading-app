@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Trading League</title>
+    <!-- Telegram Web App Script -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="user-info">
+                <span id="username">Trader</span>
+            </div>
+            <div class="stars-badge">
+                ⭐ <span id="star-count">50</span> Stars
+            </div>
+        </header>
+
+        <!-- Portfolio Overview -->
+        <section class="portfolio-card">
+            <p>PORTFOLIO VALUE</p>
+            <h2>$10,450.00</h2>
+            <span class="profit">+4.2% today</span>
+        </section>
+
+        <!-- Trading Quick View -->
+        <section class="trading-section">
+            <div class="asset-header">
+                <span>BTC/USDT</span>
+                <span class="live-tag">LIVE 🟢</span>
+            </div>
+            <div class="price-display">$67,420.50</div>
+            
+            <div class="trade-buttons">
+                <button class="btn long-btn" onclick="placeTrade('LONG')">🟢 LONG (UP)</button>
+                <button class="btn short-btn" onclick="placeTrade('SHORT')">🔴 SHORT (DOWN)</button>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <nav class="footer-nav">
+            <button class="nav-btn active">Home</button>
+            <button class="nav-btn">Markets</button>
+            <button class="nav-btn">Leaderboard</button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
