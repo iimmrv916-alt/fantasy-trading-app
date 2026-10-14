@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy Trading League</title>
-    <!-- Telegram Web App Script -->
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="app-container">
-        <!-- Header Section -->
+        <!-- Header -->
         <header class="header">
             <div class="user-info">
-                <span id="username">Trader</span>
+                <span>👤 <span id="username">Trader</span></span>
             </div>
             <div class="stars-badge">
                 ⭐ <span id="star-count">50</span> Stars
@@ -27,25 +26,26 @@
             <span class="profit">+4.2% today</span>
         </section>
 
-        <!-- Trading Quick View -->
-        <section class="trading-section">
-            <div class="asset-header">
-                <span>BTC/USDT</span>
-                <span class="live-tag">LIVE 🟢</span>
+        <!-- Active Leagues -->
+        <section class="leagues-section">
+            <h3>ACTIVE LEAGUES</h3>
+            <div class="league-item">
+                <p><strong>Crypto Blitz League</strong> (Rank: #14)</p>
+                <small>Prize Pool: 500 Stars | Time Left: 2h 45m</small>
             </div>
-            <div class="price-display">$67,420.50</div>
-            
-            <div class="trade-buttons">
-                <button class="btn long-btn" onclick="placeTrade('LONG')">🟢 LONG (UP)</button>
-                <button class="btn short-btn" onclick="placeTrade('SHORT')">🔴 SHORT (DOWN)</button>
-            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+            <button class="action-btn" onclick="joinLeague()">Join New League</button>
+            <button class="action-btn" onclick="viewLeaderboard()">View Leaderboard</button>
         </section>
 
         <!-- Navigation Footer -->
         <nav class="footer-nav">
             <button class="nav-btn active">Home</button>
             <button class="nav-btn">Markets</button>
-            <button class="nav-btn">Leaderboard</button>
+            <button class="nav-btn">Profile</button>
         </nav>
     </div>
 
